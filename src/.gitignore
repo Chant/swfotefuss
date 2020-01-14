@@ -2,4 +2,5 @@ dependencies.d
 o
 resolver
 resolver.o
+shutdown.txt
 swr
