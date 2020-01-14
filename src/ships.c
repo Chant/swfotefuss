@@ -357,7 +357,7 @@ void do_buymobship( CHAR_DATA * ch, const char *argument )
       return;
    }
 
-   ch->pcdata->clan->funds -= ( long )ship_prototypes[ship_type].cost * 1.3;
+   ch->pcdata->clan->funds -= ( long )(ship_prototypes[ship_type].cost * 1.3);
 
    ch_printf( ch, "It costs %d to build the ship and %d to train a pilot.\r\n",
               ship_prototypes[ship_type].cost, ship_prototypes[ship_type].cost / 3 );

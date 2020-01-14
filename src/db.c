@@ -2487,7 +2487,7 @@ CHAR_DATA *create_mobile( MOB_INDEX_DATA * pMobIndex )
    if( pMobIndex->ac )
       mob->armor = pMobIndex->ac;
    else
-      mob->armor = ( short )100 - mob->top_level * 2.5;
+      mob->armor = ( short )(100 - mob->top_level * 2.5);
 
    if( !pMobIndex->hitnodice )
       mob->max_hit = mob->top_level * 10 + number_range( mob->top_level, mob->top_level * 10 );

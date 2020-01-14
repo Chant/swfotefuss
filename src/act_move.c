@@ -446,15 +446,15 @@ short encumbrance( CHAR_DATA * ch, short move )
    if( cur >= max )
       return ( short )move * 4;
    else if( cur >= max * 0.95 )
-      return ( short )move * 3.5;
+      return ( short )(move * 3.5);
    else if( cur >= max * 0.90 )
       return ( short )move * 3;
    else if( cur >= max * 0.85 )
-      return ( short )move * 2.5;
+      return ( short )(move * 2.5);
    else if( cur >= max * 0.80 )
       return ( short )move * 2;
    else if( cur >= max * 0.75 )
-      return ( short )move * 1.5;
+      return ( short )(move * 1.5);
    else
       return move;
 }
